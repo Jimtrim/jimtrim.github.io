@@ -1,8 +1,13 @@
-#home, #about, #cv {
-
+#home,
+#about,
+#cv {
+  display: none;
 }
-
-#about, #cv {
-	display:none;
+#home.active,
+#about.active,
+#cv.active {
+  display: block;
 }
-
+#main-navigation li {
+  cursor: pointer;
+}

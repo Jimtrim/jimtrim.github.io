@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/cover.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8" async defer></script>
+
   </head>
   <body>
 
@@ -21,17 +21,17 @@
           <header class="masthead clearfix">
             <div class="inner">
               <h3 class="masthead-brand">Jim Frode Hoff</h3>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="#home">Hjem</a></li>
-                <li><a href="#about">Om</a></li>
-                <li><a href="cv.html">CV</a></li>
+              <ul id="main-navigation" class="nav masthead-nav">
+                <li data-page="home" class="active"><a href="#home">Hjem</a></li>
+                <li data-page="about" ><a href="#about">Om</a></li>
+                <li data-page="cv" ><a href="cv.html">CV</a></li>
               </ul>
             </div>
           </header>
 
           <div id="main-content" class="inner cover">
             <!-- Home content -->
-            <section id="home">
+            <section data-page="home" id="home">
               <h1 class="cover-heading">Leken utvikler</h1>
               <p class="lead">
                 Dette er min personlige side på GitHub. For å se mine prosjekter 
@@ -45,8 +45,8 @@
             </section>
 
             <!-- About content -->
-            <section id="about">
-              <h1 class="cover-heading">Hjem er denne karen?</h1>
+            <section data-page="about" id="about">
+              <h1 class="cover-heading">Hvem er denne karen?</h1>
               <p class="lead">
                 Jeg er en 89-modell med utdanning fra NTNU, og erfaring med webutvikling. For mer info, sjekk ut min CV
               </p>
@@ -67,6 +67,8 @@
 
     <section id="scripts" class="hidden">
       <script src="js/vendor/jquery.js"></script>
+      <script src="bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+      <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
   </section>
   </body>
 </html>
