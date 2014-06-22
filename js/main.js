@@ -1,12 +1,6 @@
 jQuery.fn.pages = function(control) {
 	var element = jQuery(this);
 	control = jQuery(control);
-	/*	
-	element.delegate('li', 'click', function(event) { // get name, and pass it along with event trigger
-		var pageName = jQuery(this).attr("data-content"); 
-		element.trigger('change.page', pageName);
-	});
-*/
 
 	element.bind("change.page", function(e, pageName) { // change active link and hash
 		element.find("li").removeClass("active");
@@ -24,16 +18,14 @@ jQuery.fn.pages = function(control) {
 
 	if (window.location.hash == "") {
 		window.location.hash = element.find('li:first').attr("data-page");
-		element.trigger("change.page", window.location.hash);
 	}
+	console.log("intial trigger");
+	element.trigger("change.page", window.location.hash.substring(1));
 
 	return this;
 }
 
 jQuery(document).ready(function($) {
-	console.log(window.location.hash);
-	console.log(window.location.hash == "");
-
 	
 	jQuery("#main-navigation").pages('#main-content'); // connect navigation and content divs
 	
