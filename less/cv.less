@@ -27,7 +27,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 
 
-/* Overwrite Foundation table */
+/* Overwrite Foundation table 
 
 table {
   background: none;
@@ -57,6 +57,7 @@ table {
 		}
   }	
 }
+*/
 	
 /*-END-----------------------------------------------*/
 
@@ -117,39 +118,48 @@ h4 {
 	margin: 10px 0 0 0;
 }
 
-ul 
-
 ul {
 	margin: 0 0 0 25px;
 	li {
 		list-style: disc;
 	}
-}
-ul.exp_list li {
-	list-style: none;
-	margin: 0 0 10px 0;
-	padding: 0 0 10px 0;
-	border-bottom: 1px dotted #ccc;
-}
-ul.exp_list li.last {
-	margin: 0;
-	border: none;
-}
-ul.exp_list li span {
-	color: #aaa;
-	margin: 0 15px 0 0;
-	float: right;
-	font-style: italic;
-	font-size: 11px;
+
+	&.exp_list li {
+		list-style: none;
+		margin: 0 0 10px 0;
+		padding: 0 0 10px 0;
+		border-bottom: 1px dotted #ccc;
+		&.last {
+			margin:0;
+			border:none;
+		}
+
+		span {
+			color: #aaa;
+			margin: 0 15px 0 0;
+			float: right;
+			font-style: italic;
+			font-size: 11px;
+			.role {
+				float: left;
+				color: black;
+				font-size: 100%;
+				font-style: normal;
+			}
+		}
+	}
 }
 
-.exp_list a h3 {
-	display: block;
-	font-weight: bold;
-	color: #2f2f2f;
-}
-.exp_list a:hover h3 {
-	text-decoration: underline;
+
+.exp_list {
+	a h3 {
+		display: block;
+		font-weight: bold;
+		color: #2f2f2f;
+	}
+	a:hover h3 {
+		text-decoration: underline;
+	}
 }
 
 table {
@@ -158,11 +168,5 @@ table {
 .cell_title {
 	font-weight: bold;
 	width: 140px;
-}
-ul.exp_list li span.role {
-	float: left;
-	color: black;
-	font-size: 100%;
-	font-style: normal;
 }
 
