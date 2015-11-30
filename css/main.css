@@ -11,3 +11,10 @@
 #main-naviation li {
   cursor: pointer;
 }
+a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}

@@ -51,27 +51,27 @@ table {
   border-spacing: 0;
 }
 /*-END-----------------------------------------------*/
-/* Overwrite Foundation table 
+/* Overwrite Foundation table
 
 table {
   background: none;
   margin-bottom: 1.25rem;
-  border: none; 
+  border: none;
 
   tr {
 		th, td {
 			display: table-cell;
-			line-height: 1.125rem; 
+			line-height: 1.125rem;
 			padding: 0 0 0 0;
 			font-size: 0.750rem;
-			color: #222222; 
+			color: #222222;
 		}
 		&.even, &.alt, &:nth-of-type(even) {
 			background: none;
 		}
 	}
   thead, tfoot {
-		background: none; 
+		background: none;
 		tr th, tr td {
 		  padding: 0 0 0 0;
 		  font-size: 12px;
@@ -79,7 +79,7 @@ table {
 		  color: #222222;
 		  text-align: left;
 		}
-  }	
+  }
 }
 */
 /*-END-----------------------------------------------*/
@@ -177,4 +177,12 @@ table {
 .cell_title {
   font-weight: bold;
   width: 140px;
+}
+
+a {
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
 }
